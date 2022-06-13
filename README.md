@@ -2,9 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# The app is deployed at
+## The app is deployed at
 
-https://football-roster.netlify.app/
+https://football-roster.netlify.app/.
 
 ## Available Scripts
 
