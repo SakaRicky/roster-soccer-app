@@ -1,5 +1,5 @@
 import React, { ChangeEvent, useState } from "react";
-import { setTeam, useStateValue, setFilteredTeam } from "../../state";
+import { useStateValue, setFilteredTeam } from "../../state";
 import { TextInput } from "../Form";
 
 export const SearchForm = () => {

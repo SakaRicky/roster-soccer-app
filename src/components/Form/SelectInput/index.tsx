@@ -1,5 +1,4 @@
 import React from "react";
-import { Nationality, Position } from "../../../types";
 
 interface SelectInputAttributes {
 	disabled?: boolean;

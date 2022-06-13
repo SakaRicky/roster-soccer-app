@@ -8,7 +8,9 @@ export const ConfirmDelete = () => {
 	const handleDelete = (e: React.FormEvent<EventTarget>) => {
 		e.preventDefault();
 		const newTeam = state.team?.filter(player => {
-			return player.name !== state.player!.name;
+			if (state.player) {
+				return player.name !== state.player.name;
+			}
 		});
 
 		if (newTeam) {

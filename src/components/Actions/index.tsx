@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React from "react";
 import { setModal, setPlayer, useStateValue } from "../../state";
 import { Player } from "../../types";
@@ -7,7 +8,7 @@ interface ActionsAttributes {
 	player: Player;
 }
 export const Actions = ({ closeActions, player }: ActionsAttributes) => {
-	const [_state, dispatch] = useStateValue();
+	const [state, dispatch] = useStateValue();
 
 	const handleEditClick = () => {
 		dispatch(setModal({ show: true, form: "edit" }));
