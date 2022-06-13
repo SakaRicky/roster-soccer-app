@@ -14,10 +14,10 @@ export const Image = ({
 }: ImageAttributes) => {
 	const style = {
 		background:
-			"linear-gradient(rgba(45, 45, 45, 0) 40%, rgba(0, 0, 0, 0.9) 90%)",
+			"linear-gradient(rgba(0, 0, 0, 0) 40%, rgba(34, 34, 34, 1) 98%)",
 	};
 	return (
-		<div className="">
+		<div>
 			<div className="relative">
 				<img
 					src={imgURL}
@@ -29,7 +29,7 @@ export const Image = ({
 					className="h-full w-full text-5xl font-bold text-orange absolute top-0 left-0 flex flex-col justify-between text-left"
 				>
 					<div className="mt-8 ml-4">{jerseyNumber}</div>
-					<div className="">
+					<div>
 						<div className="text-heading text-2xl">{name}</div>
 						<div className="text-lg">{position}</div>
 					</div>

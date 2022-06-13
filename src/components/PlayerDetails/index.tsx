@@ -30,7 +30,7 @@ export const PlayerDetails = () => {
 					<div className="">
 						<div className="mb-2 text-sm">Weight</div>
 						{state.player && (
-							<div className="c text-heading">
+							<div className="text-heading">
 								{isNaN(state.player.weight)
 									? "Unknown"
 									: state.player.weight.toString() + " kg"}
@@ -40,11 +40,13 @@ export const PlayerDetails = () => {
 					<div className="">
 						<div className="mb-2 text-sm">Nationality</div>
 						<div className="flex items-center gap-2 text-heading">
-							<img
-								src={state.player?.flagImage}
-								className="object-cover h-6 w-6"
-								alt=""
-							/>
+							{state.player && (
+								<img
+									src={state.player?.flagImage}
+									className="object-cover h-6 w-6"
+									alt=""
+								/>
+							)}
 							{state.player?.nationality}
 						</div>
 					</div>
