@@ -1,13 +1,48 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	input[type="radio"]:checked + span {
+		background-color: #fea013;
+	}
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer components {
+	.footballPitch {
+		width: 50vw;
+		height: 60vh;
+		/* background-image: radial-gradient(
+			#3aa94c 0%,
+			#1b4d23 42%,
+			#0f2d14 45%
+		); */
+		background: radial-gradient(
+			rgba(137, 245, 159, 0.42) 0%,
+			rgba(41, 196, 41, 0.42) 54.17%,
+			rgba(0, 130, 0, 0.33) 100%
+		);
+	}
+}
+
+@layer components {
+	/* width */
+	::-webkit-scrollbar {
+		width: 10px;
+	}
+
+	/* Track */
+	::-webkit-scrollbar-track {
+		background: #2d2d2d;
+	}
+
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+		background: #fea013;
+	}
+
+	/* Handle on hover */
+	::-webkit-scrollbar-thumb:hover {
+		background: #555;
+	}
 }
