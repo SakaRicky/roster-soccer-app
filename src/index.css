@@ -6,9 +6,7 @@
 	input[type="radio"]:checked + span {
 		background-color: #fea013;
 	}
-}
 
-@layer components {
 	.footballPitch {
 		width: 50vw;
 		height: 60vh;
@@ -23,9 +21,7 @@
 			rgba(0, 130, 0, 0.33) 100%
 		);
 	}
-}
 
-@layer components {
 	/* width */
 	::-webkit-scrollbar {
 		width: 10px;

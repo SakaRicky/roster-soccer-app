@@ -6,6 +6,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 https://football-roster.netlify.app/.
 
+## About the app
+
+Football-roster is an app that takes a CSV file containing data about football players of a a football soccer team. If 1 of the fields don't have an entry, the data wouldn't be imported and it will display an error. The app displays the list of players in the CSV and can permit you to you select starters, edit player names, jersey number etc. You can also delete players from the list of players. You will also find the players arranged in a pitch with the formation 4 3 3 with 1 goalkeeper. If the formation don't follow this partern, an error will be displayed and the players won't be rendered to the field or pitch.
+
 ## Available Scripts
 
 In the project directory, you can run:
